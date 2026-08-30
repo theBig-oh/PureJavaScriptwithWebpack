@@ -2,6 +2,9 @@
 
 .navBarContainerBase {
 	@extend %silkscreen-regular;
+
+	display: flex;
+	height: min-content;
 }
 
 .navBarContainerMobile {
