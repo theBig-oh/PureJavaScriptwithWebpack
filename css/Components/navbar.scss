@@ -1,0 +1,42 @@
+@use '../settings' as *;
+
+.navBarContainerBase {
+	@extend %silkscreen-regular;
+}
+
+.navBarContainerMobile {
+	@media (min-width: $break-md) {
+		display: none;
+	}
+}
+
+.navBarContainerDesktop {
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: white;
+	height: 50px;
+}
+
+.navBarPages {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	a {
+		color: white;
+	}
+
+	.navBarContainerDesktop & {
+		width: 40%;
+		font-size: 2rem;
+	}
+}
+
+.navBarName {
+	.navBarContainerDesktop & {
+		font-size: 3rem;
+		color: white;
+	}
+}

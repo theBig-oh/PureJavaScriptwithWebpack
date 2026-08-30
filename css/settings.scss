@@ -1,0 +1,23 @@
+@use './utils/index' as *; 
+
+// Colors
+
+$color--darker-brown: #3B2B24;
+$color--dark-brown: #6E422D;
+$color--dark-tan: #D4B8AB;
+$color--light-tan: #FFDAC9;
+$color--salmon-tan: #FFB896;
+
+
+$color--dark-grey: #222831;
+$color--mid-grey: #393E46;
+$color--dark-tanned: #948979;
+$color--khaki: #DFD0B8;
+
+// Breakpoints
+
+$break-sm: 20rem;
+$break-md: 48rem;
+$break-lg: 75rem;
+$break-xl: 90rem;
+

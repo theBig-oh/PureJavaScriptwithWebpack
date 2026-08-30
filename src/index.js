@@ -1,5 +1,6 @@
 import '../css/style.scss';
 import MakeElement from './Tools/MakeElement.js';
+import NavBar from './Components/navbar.js';
 
 
 
@@ -14,7 +15,10 @@ function RenderSite(){
 
   let bodyContainer = makeEle.createEle('div','bodyContainer',false,'bodyContain');  
 
-  let bodyLayout = [makeEle.createEle('div','header',false,'header-container'),
+  let siteName = 'The Big Oh';
+  let sitePages = ['About', 'Projects', 'Contact'];
+
+  let bodyLayout = [NavBar(siteName, sitePages),
                     makeEle.createEle('div','bodyIntro',false,['bodyIntro', 'bodyItems']),
                     makeEle.createEle('div','bodyProjects',false,['bodyProjects', 'bodyItems']),
                     makeEle.createEle('div','bodyArt',false,['bodyArt', 'bodyItems']),
